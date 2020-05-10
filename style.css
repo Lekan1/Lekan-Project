@@ -209,3 +209,57 @@ h1 {
 .social a {
 	margin: 0 5px;
 }
+/* LANGUAGES SECTION */
+.language{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url(img/pic2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff !important;
+    margin-top: 30px;
+}
+.language h1{
+  text-align: center;
+  padding-bottom: 10px;
+  color: #efefef !important;
+}
+.language h1::after{
+  content: "";
+  display: block;
+  width: 170px;
+  height: 3px;
+  margin: 20px auto 5px;
+  background: #efefef;
+}
+.margin{
+  margin-top: 10px;
+}
+.icons img{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 20px;
+  height: 4%;
+  width: 60%;
+  font-size: 4px;
+  margin: 23px 80px;
+}
+.language p{
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #ccc;
+  transition: 0.8s ease-in-out;
+}
+.language .col-md-4:hover{
+  cursor: pointer;
+  transition: 0.8s ease-in;
+  background: grey;
+  border-radius: 10%;
+  color: black;
+}
+.language p:hover{
+  color: black;
+  font-size: 1.2rem;
+  font-family: Roboto, serif;
+}
