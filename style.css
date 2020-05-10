@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* THE NAV BLOCK */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #5D4954;
+    z-index: 10;
+    min-height: 9vh;
+}
+/* THE LEKAN DAR LOGO */
+.logo{
+    z-index: 10;
+    color: rgb(238, 231, 231);
+    letter-spacing: 2px;
+    font-size: 0.5rem;
+    text-transform: capitalize;
+    font-family: 'Charm', cursive;
+}
+.nav-links{
+    z-index: 10;
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.nav-links li{
+    z-index: 10;
+    list-style: none;
+}
+.nav-links a{
+    z-index: 10;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 3px;
+    color: rgb(214, 221, 228);
+}
+.burger{
+    display: none;
+}
+.burger div{
+    z-index: 10;
+    width: 25px;
+    height: 2.5px;
+    margin: 5px;
+    background-color: rgb(238, 231, 231);
+    transition: 0.9s ease all;
+}
+/* THE RESPONSIVE VERSION  */
+@media screen and (max-width:1024px){
+    .nav-links{
+        z-index: 10;
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+    body {
+        overflow: hidden;
+    }
+    .nav-links{
+        z-index: 10;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url();
+        border-radius: 30%;
+        width: 40%;
+        transform: translateX(100%);
+        transition: 0.7s ease-in all;
+    }
+    .nav-links li{
+        z-index: 10;
+        opacity: 0;
+    }
+    .burger{
+        z-index: 10;
+        display: block;
+    }
+}
+.nav-active{
+    z-index: 10;
+    transform: translateX(0%);
+}
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+        z-index: 10;
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+        z-index: 10;
+    }
+}
+/* THE HAMBURGER TRANSITION */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+    z-index: 10;
+}
+.toggle .line2{
+    opacity: 0;;
+
+}
+.toggle .line3{
+    z-index: 10;
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+/* THE END OF THE NAV-BAR */
+
+a {
+	text-decoration: none;
+	color: var(--primary-color);
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 60px;
+	line-height: 1.2;
+	margin-bottom: 15px;
+}
+
+.showcase {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	color: #fff;
+	padding: 0 20px;
+}
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: var(--primary-color) url('./https://traversymedia.com/downloads/cover.jpg') no-repeat center
+		center/cover;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+}
+
+.content {
+	z-index: 2;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	background: var(--primary-color);
+	color: #fff;
+	border-radius: 5px;
+	border: solid #fff 1px;
+	margin-top: 25px;
+	opacity: 0.7;
+}
+
+.btn:hover {
+	transform: scale(0.98);
+}
+
+#about {
+	padding: 40px;
+	text-align: center;
+}
+
+#about p {
+	font-size: 1.2rem;
+	max-width: 600px;
+	margin: auto;
+}
+
+#about h2 {
+	margin: 30px 0;
+	color: var(--primary-color);
+}
+
+.social a {
+	margin: 0 5px;
+}
